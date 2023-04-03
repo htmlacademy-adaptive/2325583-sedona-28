@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Эльдар Молдажанов](https://up.htmlacademy.ru/adaptive/28/user/2325583).
-* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov)
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
