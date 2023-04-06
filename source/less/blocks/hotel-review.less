@@ -1,0 +1,134 @@
+.hotel-review {
+  padding: 0 20px;
+
+  //линию придется делать псевдоэлементом ::before скорее всего
+
+  &__fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  &__title {
+    margin: 24px auto 20px auto;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &:last-child {
+      margin-bottom: 39px;
+    }
+  }
+
+  &__text-label {
+    padding-left: 16px;
+  }
+
+  &__text-input {
+    font-family: inherit;
+    padding: 0;
+    width: 280px;
+    height: 58px;
+    background-color: #f2f2f2;
+    border: none;
+
+    &::placeholder {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+      padding-left: 20px;
+      color: #000000;
+    }
+
+    &--contacts::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  // 2 свойства ниже лучше бы я сделал через модификатор. слишком много кода на квадратный метр, можно было сократить.
+
+  &__radio-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &:last-child {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__radio-name {
+    padding-left: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  &__checkbox-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &:last-child {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__checkbox-name {
+    padding-left: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  &__textarea {
+    width: 279px;
+    height: 150px;
+    font-family: inherit;
+    border: none;
+    resize: none;
+    background-color: #f2f2f2;
+
+    &::placeholder {
+      padding: 16px;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__button {
+    width: 280px;
+    height: 58px;
+    padding: 16px 49px;
+    margin-bottom: 3px;
+  }
+
+  &__required-field {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.6);
+  }
+}
