@@ -1,0 +1,37 @@
+.images {
+  padding: 0 20px;
+}
+
+.images__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.images__item {
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 25px;
+}
+
+.images__picture {
+  margin: 24px 0 15px 0;
+}
+
+.images__title {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.images__authors {
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.images__like-count {
+  background: url("../images/like-icon.svg") no-repeat;
+  margin-left: 14px;
+  font-weight: 700;
+}

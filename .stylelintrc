@@ -4,6 +4,10 @@
   "rules": {
     "declaration-no-important": true,
     "indentation": [2, {"ignore": ["inside-parens"]}],
+<<<<<<< Updated upstream
     "rule-empty-line-before": "always"
+=======
+    "at-rule-no-unknown": null
+>>>>>>> Stashed changes
   }
 }

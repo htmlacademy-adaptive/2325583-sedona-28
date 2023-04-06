@@ -1,0 +1,45 @@
+.modal {
+  margin-top: 45px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.modal__button {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 58px;
+  padding: 18px 64px 14px 63px;
+}
+
+.modal__button-layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 98px;
+  background-color: #f2f2f2;
+}
+
+.modal__content--success {
+  margin-top: 39px;
+}
+
+.modal__button--success {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 58px;
+}
