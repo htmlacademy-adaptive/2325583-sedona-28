@@ -1,0 +1,36 @@
+.presentation {
+  padding: 0 27px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.presentation__lead {
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 26px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.presentation__description {
+  margin: 0;
+  margin-bottom: 38px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.presentation__wrapper {
+  position: relative;
+}
+
+.presentation__play {
+  position: absolute;
+  top: 62px;
+  left: 116px;
+  width: 100%;
+  min-height: 54px;
+  background: url("../img/play-button.png") no-repeat;
+  border: none;
+}

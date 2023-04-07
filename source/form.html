@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
   <title>Форма отзыва</title>
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны."></a>
+      <img class="main-header__logo-image main-header__logo-image" src="img/sedona-logo.svg" width="185" height="96"
+        alt="Логотип Седоны."></a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
@@ -34,13 +36,14 @@
   <main class="main-container">
     <section class="intro">
       <h1 class="visually-hidden">Отзыв о Седоне</h1>
-      <img class="intro__background-image" src="img/background-form.jpg" width="320" height="214"
-        alt="изображение гор Седоны.">
-      <img class="intro__text-image" src="img/sedona-text.png" width="229" height="29" alt="Седона.">
-      <h2 class="intro__lead">
+      <img class="intro__background-image intro__background-image--form-page" src="img/background-form.jpg" width="320"
+        height="158" alt="изображение гор Седоны.">
+      <img class="intro__text-image intro__text-image--form-page" src="img/sedona-text.png" width="229" height="39"
+        alt="Седона.">
+      <h2 class="intro__lead intro__lead--form-page">
         Оставьте свой отзыв
       </h2>
-      <p class="intro__description">
+      <p class="intro__description intro__description--form-page">
         Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
     </section>
@@ -57,7 +60,7 @@
             </li>
             <li class="hotel-review__text-item">
               <label class="hotel-review__text-label">Фамилия*:
-                <input class="hotel-review__text-in put" type="text" name="surname" placeholder="Пустота">
+                <input class="hotel-review__text-input" type="text" name="surname" placeholder="Пустота">
               </label>
             </li>
             <li class="hotel-review__text-item">
@@ -72,12 +75,14 @@
           <ul class="hotel-review__text-list">
             <li class="hotel-review__text-item">
               <label class="hotel-review__text-label">Контактный номер*:
-                <input class="hotel-review__text-input" type="tel" name="phone" placeholder="Введите телефон">
+                <input class="hotel-review__text-input hotel-review__text-input--contacts" type="tel" name="phone"
+                  placeholder="Введите телефон">
               </label>
             </li>
             <li class="hotel-review__text-item">
               <label class="hotel-review__text-label">Электронная почта*:
-                <input class="hotel-review__text-input" type="email" name="user-email" placeholder="Введите e-mail">
+                <input class="hotel-review__text-input hotel-review__text-input--contacts" type="email"
+                  name="user-email" placeholder="Введите e-mail">
               </label>
             </li>
           </ul>
@@ -218,7 +223,9 @@
       <h3 class="modal__title">Ваш отзыв отправлен!</h3>
       <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
         опубликуем его на сайте.</p>
-      <button class="modal__button button">Закрыть окно</button>
+      <div class="modal__button-layer">
+        <button class="modal__button modal__button--success button">Закрыть окно</button>
+      </div>
     </section>
   </div>
 </body>

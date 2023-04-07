@@ -1,0 +1,87 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.advantages__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 18px;
+  background-color: #eeeeee;
+}
+
+.advantages__item:first-child,
+.advantages__item:nth-child(2) {
+  background-color: #81b3d2;
+  color: $white;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-top: 54px;
+  margin-bottom: 11px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.advantages__count {
+  margin-bottom: 17px;
+}
+
+.advantages__description {
+  margin: 0;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages__sublist {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: $white;
+  color: #000000;
+}
+
+.advantages__subitem {
+  margin: 0 18px 25px 65px;
+}
+
+.advantages__subitem:first-child {
+  background: url("../img/sub-list-house.png") no-repeat 40px 40px;
+}
+
+.advantages__subitem:nth-child(2) {
+  background: url("/../img/sub-list-food.png") no-repeat 40px 40px;
+}
+
+.advantages__subitem:last-child {
+  background: url("../img/sub-list-souvenir.png") no-repeat 40px 40px;
+}
+
+.advantages__subtitle {
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages__subdescription {
+  margin: 0;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,131 @@
+.hotel-review {
+  padding: 0 20px;
+}
+
+.hotel-review__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+.hotel-review__title {
+  margin: 24px auto 20px auto;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hotel-review__text-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hotel-review__text-list:last-child {
+  margin-bottom: 39px;
+}
+
+.hotel-review__text-label {
+  padding-left: 16px;
+}
+
+.hotel-review__text-input {
+  font-family: inherit;
+  padding: 0;
+  width: 100%;
+  min-height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.hotel-review__text-input::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  padding-left: 20px;
+  color: #000000;
+
+  &--contacts::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.hotel-review__radio-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .hotel-review__radio-list:last-child {
+    margin-bottom: 24px;
+  }
+}
+
+.hotel-review__radio-name {
+  padding-left: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.hotel-review__checkbox-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hotel-review__checkbox-list:last-child {
+  margin-bottom: 24px;
+}
+
+.hotel-review__checkbox-name {
+  padding-left: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.hotel-review__textarea {
+  width: 100%;
+  min-height: 150px;
+  font-family: inherit;
+  border: none;
+  resize: none;
+  background-color: #f2f2f2;
+}
+
+.hotel-review__textarea::placeholder {
+  padding: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-review__button {
+  width: 100%;
+  min-height: 58px;
+  padding: 16px 49px;
+  margin-bottom: 3px;
+}
+
+.hotel-review__required-field {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+}

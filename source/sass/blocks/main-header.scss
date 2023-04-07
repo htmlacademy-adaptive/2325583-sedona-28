@@ -1,0 +1,11 @@
+.main-header {
+  position: relative;
+  display: flex;
+}
+
+.main-header__logo-image {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 67px;
+}
