@@ -2,23 +2,42 @@
   position: relative;
 }
 
+
+.intro__container {
+  position: relative;
+}
+
 .intro__background-image {
+  width: 100%;
+  min-height: 389px;
   margin-bottom: 32px;
 
   &--form-page {
     margin-bottom: 36px;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 518px;
+    margin-bottom: 47.5px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    min-height: 518px;
+    margin-bottom: 59px;
+  }
 }
 
 .intro__text-image {
   position: absolute;
-  top: 90px;
-  left: 19px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &--form-page,
   &--media-page {
-    top: 52px;
-    left: 45px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -30,14 +49,38 @@
   text-align: center;
   text-transform: uppercase;
 
-  &--form-page {
-    margin-top: 36px;
-    margin-bottom: 24px;
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 124px 35px 124px;
+    font-size: 21px;
   }
 
-  &--media-page {
-    margin-top: 37px;
-    margin-bottom: 25px;
+  @media screen and (min-width: $desktop-width) {
+    margin: 0 357px 35px 357px;
+    font-size: 21px;
+  }
+}
+
+.intro__lead--form-page {
+  margin: 36px 0 24px 0;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 30px;
+  }
+}
+
+.intro__lead--media-page {
+  margin: 37px 0 25px 0;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 30px;
   }
 }
 
@@ -46,11 +89,28 @@
   text-align: center;
   text-transform: uppercase;
 
-  &--form-page {
-    margin-bottom: 28px;
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 124px 55.5px 124px;
   }
 
-  &--media-page {
-    margin-bottom: 25px;
+  @media screen and (min-width: $desktop-width) {
+    margin: 0 357px 44px 357px;
+  }
+}
+
+
+.intro__description--form-page {
+  margin-bottom: 28px;
+}
+
+.intro__description--media-page {
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 155px 62px 155px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0 345px 64px 345px;
   }
 }

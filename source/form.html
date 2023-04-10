@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1">
   <title>Форма отзыва</title>
 </head>
 
@@ -50,7 +52,7 @@
 
     <section class="hotel-review">
       <form class="hotel-review__form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="hotel-review__fieldset">
+        <fieldset class="hotel-review__fieldset hotel-review__fieldset--tablet">
           <h3 class="hotel-review__title">Представьтесь:</h3>
           <ul class="hotel-review__text-list">
             <li class="hotel-review__text-item">
@@ -70,7 +72,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="hotel-review__fieldset">
+        <fieldset class="hotel-review__fieldset hotel-review__fieldset--tablet">
           <h3 class="hotel-review__title">Контактная информация:</h3>
           <ul class="hotel-review__text-list">
             <li class="hotel-review__text-item">
@@ -146,9 +148,11 @@
               placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
         </fieldset>
+        <div class="hotel-review__button-container">
         <button class="hotel-review__button button" type="submit">Отправить отзыв
         </button>
         <span class="hotel-review__required-field">* - обязательные поля</span>
+      </div>
       </form>
     </section>
   </main>
@@ -220,7 +224,7 @@
   </div>
   <div class="modal">
     <section class="modal__content modal__content--success">
-      <h3 class="modal__title">Ваш отзыв отправлен!</h3>
+      <h3 class="modal__title modal__title-success">Ваш отзыв отправлен!</h3>
       <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
         опубликуем его на сайте.</p>
       <div class="modal__button-layer">

@@ -1,27 +1,65 @@
 .advantages {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style-type: none;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .advantages__item {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 18px;
+  text-align: center;
   background-color: #eeeeee;
+
+  &--blue-background {
+    background-color: $blue;
+    color: $white;
+    width: 100%;
+  }
+
+  &--row-direction {
+    padding: 0 18px;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 33.33%;
+      padding: 0 33px;
+    }
+  }
 }
 
-.advantages__item:first-child,
-.advantages__item:nth-child(2) {
-  background-color: #81b3d2;
-  color: $white;
+.advantages__content {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.advantages__content-text {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 33px;
+    width: 33.33%;
+  }
 }
 
 .advantages__title {
@@ -45,29 +83,100 @@
   text-align: center;
 }
 
+.advantages__picture {
+  width: 100%;
+  object-fit: cover;
+}
+
 .advantages__sublist {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 0;
   margin: 0;
   list-style-type: none;
   background-color: $white;
-  color: #000000;
+  color: $black;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 331px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 331px;
+  }
 }
 
 .advantages__subitem {
-  margin: 0 18px 25px 65px;
-}
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 18px 0 65px;
 
-.advantages__subitem:first-child {
-  background: url("../img/sub-list-house.png") no-repeat 40px 40px;
-}
 
-.advantages__subitem:nth-child(2) {
-  background: url("/../img/sub-list-food.png") no-repeat 40px 40px;
-}
+  @media screen and (min-width: $tablet-width) {
+    min-height: 331px;
+    padding: 157px 33px 60px 33px;
+    width: 33.33%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-.advantages__subitem:last-child {
-  background: url("../img/sub-list-souvenir.png") no-repeat 40px 40px;
+  @media screen and (min-width: $desktop-width) {
+    min-height: 330px;
+    padding: 169px 50px 69px 50px;
+  }
+
+  &--accomodation {
+    background: url("../img/sub-list-house.png") no-repeat  top 23px left 18px;
+    background-size: 40px 40px;
+
+    @media screen and (min-width: $tablet-width) {
+      background-size: 77px 72px;
+      background-position: top 60px left 88.46px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      background-size: 79.47px 72.4px;
+      background-position: top 69px left 159.57px;
+    }
+  }
+
+  &--food {
+    background: url("/../img/sub-list-food.png") no-repeat top 23px left 18px;
+
+    @media screen and (min-width: $tablet-width) {
+      background-size: 80.22px 67.9px;
+      background-position: top 62px left 86.83px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      background-size: 73.04px 68.9px;
+      background-position: top 72px left 162.14px;
+    }
+  }
+
+  &--souvenir {
+    background: url("../img/sub-list-souvenir.png") no-repeat top 23px left 18px;
+
+    @media screen and (min-width: $tablet-width) {
+      background-size: 66.51px 75px;
+      background-position: top 64px left 98.47px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      background-size: 77.46px 75.02px;
+      background-position: top 69px left 159.43px;
+    }
+  }
 }
 
 .advantages__subtitle {
