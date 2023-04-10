@@ -4,7 +4,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     min-width: 400px;
     min-height: 347px;
   }
@@ -17,14 +17,14 @@
   font-weight: 700;
   margin-bottom: 26px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 40px;
   }
 }
 
 .modal__title--success {
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 26px;
   }
@@ -41,11 +41,11 @@
   min-height: 58px;
   padding: 18px 64px 14px 63px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     max-width: 272px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     max-width: 458px;
   }
 }
@@ -62,7 +62,7 @@
 .modal__content--success {
   margin-top: 39px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     min-width: 640px;
     min-height: 347px;
   }

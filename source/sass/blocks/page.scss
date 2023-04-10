@@ -7,9 +7,9 @@
   line-height: 21px;
   font-weight: 400;
   background-color: $white;
-  color: #000000;
+  color: $black;
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     padding: 0 40px;
   }
 }

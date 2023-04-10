@@ -11,13 +11,13 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin: 60px 0 30px 0;
     font-size: 30px;
     line-height: 26px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
   }
@@ -29,11 +29,11 @@
   text-transform: uppercase;
   margin-bottom: 32px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     padding: 0 167px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     padding: 0 383px;
   }
 }
@@ -43,12 +43,12 @@
   min-height: 58px;
   margin: 0 18px 49px 18px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     min-width: 458px;
     margin: 0 155px 55px 155px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     min-width: 458px;
     margin: 0 371px 66px 371px;
   }
