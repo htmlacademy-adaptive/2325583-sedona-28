@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1">
   <title>Седона</title>
 </head>
 
@@ -35,12 +37,14 @@
   <main class="main-container">
     <section class="intro">
       <h1 class="visually-hidden">Седона-городок в Аризоне.</h1>
+      <div class="intro__container">
       <img class="intro__background-image" src="img/background-mobile.jpg" width="320" height="389"
         alt="изображение гор Седоны.">
       <img class="intro__text-image" src="img/background-text.png" width="282" height="214"
         alt="Добро пожаловать в Седону.">
+      </div>
       <h2 class="intro__lead">
-        Седона — небольшой городок в аризоне, заслуживающий большего!
+        Седона — небольшой городок в аризоне,<br> заслуживающий большего!
       </h2>
       <p class="intro__description">
         Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
@@ -106,8 +110,11 @@
       </p>
       <a class="hotel-search__button button" href="#">Найти гостиницу</a>
       <div class="hotel-search__map">
-        <img class="hotel-search__map-image" src="img/map-mobile.jpg" width="320" height="350"
-          alt="Местоположение гостиниц Седоны">
+        <picture class="hotel-search__map-pictures">
+          <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg" width="1200px" height="350px" alt="Местоположение гостиниц Седоны, версия для персонального компьютера.">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg" width="768" height="350" alt="Местоположение гостиниц Седоны, версия для планшета.">
+          <img class="hotel-search__map-image" src="img/map-mobile.jpg" width="320" height="350" alt="Местоположение гостиниц Седоны, мобильная версия.">
+        </picture>
         <svg class="hotel-search__map-dot" width="27" height="27" viewBox="0 0 27 27" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path

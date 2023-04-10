@@ -1,27 +1,72 @@
 .advantages {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "item-1 item-1 item-1"
+      "sublist sublist sublist"
+      "item-2 item-2 item-2"
+      "item-3 item-4 item-5";
+  }
 }
 
 .advantages__item {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 18px;
   background-color: #eeeeee;
 }
 
-.advantages__item:first-child,
+.advantages__item:first-child {
+  background-color: #81b3d2;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    grid-area: item-1;
+  }
+}
+
 .advantages__item:nth-child(2) {
   background-color: #81b3d2;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    grid-area: item-2;
+  }
+}
+
+
+.advantages__item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    grid-area: item-3;
+  }
+}
+
+.advantages__item:nth-child(4) {
+  @media (min-width: $tablet-width) {
+    grid-area: item-4;
+  }
+}
+
+.advantages__item:nth-child(5) {
+  @media (min-width: $tablet-width) {
+    grid-area: item-5;
+  }
 }
 
 .advantages__title {
@@ -46,16 +91,35 @@
 }
 
 .advantages__sublist {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 0;
   margin: 0;
   list-style-type: none;
   background-color: $white;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 331px;
+    grid-area: sublist;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 331px;
+    grid-area: sublist;
+  }
 }
 
 .advantages__subitem {
-  margin: 0 18px 25px 65px;
+  width: 100%;
+  padding: 0 18px 25px 65px;
 }
 
 .advantages__subitem:first-child {
