@@ -1,6 +1,4 @@
 .main-footer {
-  margin-bottom: 36px;
-
   @media screen and (min-width: $tablet-width) {
     margin: 0 60px 36px 60px;
     display: flex;
@@ -34,4 +32,15 @@
   margin: 0;
   gap: 6px;
   list-style-type: none;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: $tablet-width) {
+      margin: 36px 113.5px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin: 36px 269.5px;
+    }
+  }
 }

@@ -59,12 +59,28 @@
   background-color: #f2f2f2;
 }
 
+.modal__content--failure {
+  @media screen and (min-width: $tablet-width) {
+    min-width: 400px;
+    margin: 283px 184px 342px 184px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 244px 440px 403px 440px;
+  }
+}
+
 .modal__content--success {
   margin-top: 39px;
 
   @media screen and (min-width: $tablet-width) {
     min-width: 640px;
     min-height: 347px;
+    margin: 162px 64px 463px 64px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 145px 320px 502px 320px;
   }
 }
 

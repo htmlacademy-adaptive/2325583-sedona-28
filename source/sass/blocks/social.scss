@@ -1,9 +1,27 @@
 .social__item {
-  width: 48px;
-  min-height: 48px;
+  background-color: $blue;
 }
 
 .social__link {
-  width: 100%;
-  min-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5797bd;
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

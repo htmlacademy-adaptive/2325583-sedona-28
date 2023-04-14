@@ -1,66 +1,136 @@
 .hotel-review {
   padding: 0 20px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     padding: 0 60px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     padding: 0 120px;
   }
 }
 
 .hotel-review__fieldset {
+  margin: 0;
   padding: 0;
-  margin: 0 auto;
   border: none;
+  position: relative;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+  @media screen and (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      min-width: 320px;
+      background-color: #dbdbdb;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 56px;
+  @media screen and (min-width: $tablet-width) {
+    min-width: 295px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    min-width: 430px;
+  }
+
+  &--radio {
+    @media screen and (min-width: $desktop-width) {
+      min-width: 960px;
+    }
+  }
+
+  &--checkbox {
+    @media screen and (min-width: $desktop-width) {
+      min-width: 960px;
+    }
   }
 }
 
-.hotel-review__fieldset--tablet {
-  @media (min-width: $tablet-width) {
-    display: inline-block;
-    float: right;
-    margin-bottom: 56px;
+.hotel-review__text-wrapper {
+  min-height: 624px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 59px;
 
-    &:first-child {
-      float: left;
-      min-width: 280px;
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 323px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1px;
+      min-height: 338px;
+      background-color: #dbdbdb;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    display: inline-block;
-    float: right;
-    margin-bottom: 56px;
-
-    &:first-child {
-      float: left;
-    }
+  @media screen and (min-width: $desktop-width) {
+    min-width: 960px;
   }
 }
 
 .hotel-review__title {
-  margin: 24px auto 20px auto;
+  position: relative;
+  margin: 0 auto 20px auto;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 0 28px 0;
     font-size: 21px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     font-size: 21px;
+  }
+
+  &--double-line::before {
+    @media screen and (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      min-width: 123px;
+      height: 1px;
+      left: 0;
+      top: 50%;
+      background-color: #dbdbdb;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      min-width: 280px;
+    }
+  }
+
+  &--double-line::after {
+    @media screen and (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      min-width: 123px;
+      height: 1px;
+      right: 0;
+      top: 50%;
+      background-color: #dbdbdb;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      min-width: 280px;
+    }
   }
 }
 
@@ -70,32 +140,75 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
+  gap: 16px;
 
-.hotel-review__text-list:last-child {
-  margin-bottom: 39px;
+  @media screen and (min-width: $tablet-width) {
+    gap: 16px;
+  }
 }
 
 .hotel-review__text-label {
   padding-left: 16px;
+  position: relative;
+  display: block;
 }
 
 .hotel-review__text-input {
   font-family: inherit;
-  padding: 0;
+  padding: 0 0 0 20px;
   width: 100%;
   min-height: 58px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
   background-color: #f2f2f2;
   border: none;
+  outline: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: $white;
+  }
+}
+
+.hotel-review__input-wrapper {
+  position: relative;
+}
+
+.hotel-review__text-icon {
+  &--telephone {
+    position: absolute;
+    top: 63%;
+    right: 0;
+    transform: translateY(-50%);
+    background: url("../img/phone-icon.svg")  no-repeat center center;
+    background-color: #e6e6e6;
+    height: 18px;
+    width: 18px;
+    padding: 29px;
+  }
+
+  &--mail {
+    position: absolute;
+    top: 63%;
+    right: 0;
+    transform: translateY(-50%);
+    background: url("../img/mail-icon.svg")  no-repeat center center;
+    background-color: #e6e6e6;
+    height: 18px;
+    width: 18px;
+    padding: 29px;
+  }
 }
 
 .hotel-review__text-input::placeholder {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  padding-left: 20px;
-  color: $black;
+  color: rgba(0, 0, 0, 0.3);
 
   &--contacts::placeholder {
     color: rgba(0, 0, 0, 0.3);
@@ -103,76 +216,169 @@
 }
 
 .hotel-review__radio-list {
-  margin: 0;
+  margin: 0 0 49px 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
   list-style-type: none;
 
-  @media (min-width: $tablet-width) {
-    margin: 0 96px;
+  @media screen and (min-width: $tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    margin: 0 36px 48px 0;
   }
 
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    align-items: center;
+  @media screen and(min-width: $desktop-width) {
     gap: 28px;
+    margin: 0 53px 56px 0;
   }
-}
-
-.hotel-review__radio-list:last-child {
-  margin-bottom: 24px;
 }
 
 .hotel-review__radio-name {
-  padding-left: 16px;
+  margin-left: 62px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 10px 33px 10px 16px;
+  }
+}
+
+.hotel-review__radio-name:last-child {
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.hotel-review__radio-label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 46px;
+}
+
+.hotel-review__radio-input {
+  width: 46px;
+  height: 46px;
+  margin: 0;
+}
+
+.hotel-review__control-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+}
+
+.hotel-review__radio-input:checked + .hotel-review__control-mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: $black;
+  border-radius: 50%;
+}
+
+.hotel-review__control-mark:active::before {
+  background-color: rgba(51, 51, 51, 0.3);
 }
 
 .hotel-review__checkbox-list {
-  margin: 0;
+  margin: 0 0 49px 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
+  @media screen and (min-width: $tablet-width) {
     flex-direction: row;
-    margin: 0 24px;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 0 84px 42px 84px;
   }
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
+  @media screen and(min-width: $desktop-width) {
     gap: 64px;
+    margin: 0 0 56px 0;
   }
 }
 
-.hotel-review__checkbox-list:last-child {
-  margin-bottom: 24px;
+.hotel-review__checkbox-label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 46px;
+  min-width: 224px;
+
+  @media screen and(min-width: $desktop-width) {
+    min-width: 172px;
+  }
+}
+
+.hotel-review__checkbox-input {
+  width: 46px;
+  height: 46px;
+  margin: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .hotel-review__checkbox-name {
-  padding-left: 16px;
+  margin-left: 62px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
 }
+
+.hotel-review__checkbox-input + .hotel-review__control-mark {
+  border-radius: 4px;
+}
+
+.hotel-review__checkbox-input:checked + .hotel-review__control-mark {
+  background: #f2f2f2 url("../img/checkbox-icon.svg") no-repeat center;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    fill: rgba(51, 51, 51, 0.3);
+    background-color: #d5d5d5;
+  }
+}
+
 
 .hotel-review__textarea {
   width: 100%;
   min-height: 150px;
+  padding: 0;
+  margin: 0 0 56px 0;
   font-family: inherit;
   border: none;
   resize: none;
   background-color: #f2f2f2;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 0 48px 0;
+  }
 }
 
 .hotel-review__textarea::placeholder {
