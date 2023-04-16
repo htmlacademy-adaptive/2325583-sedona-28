@@ -1,10 +1,16 @@
 .intro {
   position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .intro__container {
   position: relative;
+  width: 100%;
 }
 
 .intro__background-image {
@@ -42,7 +48,8 @@
 }
 
 .intro__lead {
-  margin: 0 18px 35px 18px;
+  max-width: 285px;
+  margin: 0 0 35px 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -50,67 +57,84 @@
   text-transform: uppercase;
 
   @media screen and (min-width: $tablet-width) {
-    margin: 0 124px 35px 124px;
+    max-width: 520px;
     font-size: 21px;
   }
 
-  @media screen and (min-width: $desktop-width) {
-    margin: 0 357px 35px 357px;
-    font-size: 21px;
-  }
-}
-
-.intro__lead--form-page {
-  margin: 36px 0 24px 0;
-
   @media screen and (min-width: $tablet-width) {
-    font-size: 30px;
+    max-width: 484px;
   }
 
-  @media screen and (min-width: $desktop-width) {
-    font-size: 30px;
+
+  &--form-page {
+    max-width: 280px;
+    margin: 0 0 24px 0;
+
+    @media screen and (min-width: $tablet-width) {
+      max-width: 436px;
+      margin: 0 0 20px 0;
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      max-width: 484px;
+      margin: 0 0 31px 0;
+    }
   }
-}
 
-.intro__lead--media-page {
-  margin: 37px 0 25px 0;
+  &--media-page {
+    max-width: 280px;
+    margin: 0 0 25px 0;
 
-  @media screen and (min-width: $tablet-width) {
-    font-size: 30px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    font-size: 30px;
+    @media screen and (min-width: $tablet-width) {
+      max-width: 458px;
+      font-size: 30px;
+    }
   }
 }
 
 .intro__description {
-  margin: 0 18px 32px 18px;
+  max-width: 284px;
+  margin: 0;
+  padding: 0 0 28px 0;
   text-align: center;
   text-transform: uppercase;
 
+
   @media screen and (min-width: $tablet-width) {
-    margin: 0 124px 55.5px 124px;
+    max-width: 520px;
+    padding: 0 0 36px 0;
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin: 0 357px 44px 357px;
-  }
-}
-
-
-.intro__description--form-page {
-  margin-bottom: 28px;
-}
-
-.intro__description--media-page {
-  margin-bottom: 25px;
-
-  @media screen and (min-width: $tablet-width) {
-    margin: 0 155px 62px 155px;
+    max-width: 484px;
+    padding: 0 0 44px 0;
   }
 
-  @media screen and (min-width: $desktop-width) {
-    margin: 0 345px 64px 345px;
+  &--form-page {
+    max-width: 280px;
+
+    @media screen and (min-width: $tablet-width) {
+      max-width: 436px;
+      padding: 0 0 108px 0;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      padding: 0 0 68px 0;
+    }
+  }
+
+  &--media-page {
+    max-width: 280px;
+    padding: 0 0 28px 0;
+
+    @media screen and (min-width: $tablet-width) {
+      max-width: 458px;
+      padding: 0 0 67px 0;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      padding: 0 0 64px 0;
+    }
   }
 }

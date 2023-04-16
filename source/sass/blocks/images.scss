@@ -22,38 +22,35 @@
   flex-direction: column;
 
   @media screen and (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 324px 324px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 .images__item {
   width: 100%;
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: $tablet-width) {
+    width: 50%;
     margin: 0;
   }
 
   @media screen and (min-width: $desktop-width) {
+    position: relative;
+    width: 33.3%;
     margin: 0;
   }
 }
 
 .images__item:first-child {
   @media screen and (min-width: $tablet-width) {
-    grid-column: span 2;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    grid-column: span 3;
+    width: 100%;
   }
 }
+
 
 .images__picture {
   width: 100%;
@@ -71,19 +68,52 @@
 }
 
 .images__container {
+  position: relative;
+
   @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 80px;
     background-color: #f2f2f2;
+    margin: 0;
+    padding: 22px 0 15px 20px;
   }
 
   @media screen and (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
     min-height: 80px;
-    background-color: $black;
+    background-color: rgba(0, 0, 0, 0.3);
     color: $white;
+  }
+
+  &--dark-grey {
+    @media screen and (min-width: $tablet-width) {
+      background-color: #eaeaea;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.images__count {
+  position: relative;
+
+  @media screen and (min-width: $tablet-width) {
+    position: absolute;
+    top: 28px;
+    right: 20px;
   }
 }
 
 .images__title {
+  font-size: 14px;
+  line-height: 21px;
   margin: 0;
   font-weight: 700;
   text-transform: uppercase;
@@ -99,6 +129,10 @@
   height: 21px;
   display: inline-block;
   background: url("../img/like-icon.svg") no-repeat;
+
+  @media screen and (min-width: $desktop-width) {
+    background: url("../img/like-white-icon.svg") no-repeat;
+  }
 }
 
 .images__number {
