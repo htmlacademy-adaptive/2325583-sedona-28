@@ -7,11 +7,7 @@
 .main-header__logo-image {
   position: absolute;
   z-index: 1;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
-
-  @media screen and (max-width: $mobile-width-only) {
-    visibility: hidden;
-  }
+  transform: translate(-50%);
 }

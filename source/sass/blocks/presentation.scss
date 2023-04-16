@@ -12,9 +12,7 @@
 }
 
 .presentation__lead {
-  margin: 0;
-  margin-top: 17px;
-  margin-bottom: 26px;
+  margin: 0 0 26px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -22,10 +20,6 @@
   text-transform: uppercase;
 
   @media screen and (min-width: $tablet-width) {
-    font-size: 30px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
     font-size: 30px;
   }
 }
@@ -36,11 +30,11 @@
   text-transform: uppercase;
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin: 0 0 65px 0;
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-bottom: 68px;
+    margin: 0 0 68px 0;
   }
 }
 
@@ -51,15 +45,16 @@
 .presentation__image {
   width: 100%;
   min-height: 177px;
+  object-fit: cover;
 
   @media screen and (min-width: $tablet-width) {
     min-height: 500px;
-    margin-bottom: 40px;
+    padding: 0 0 40px 0;
   }
 
   @media screen and (min-width: $desktop-width) {
     min-height: 500px;
-    margin-bottom: 84px;
+    padding: 0 0 84px 0;
   }
 }
 
