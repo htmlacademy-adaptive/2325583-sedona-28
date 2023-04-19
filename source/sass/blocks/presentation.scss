@@ -1,13 +1,15 @@
 .presentation {
-  padding: 0 27px;
-
+  max-width: 280px;
+  margin: 0 auto;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 0 60px;
+    padding: 0 0 40px 0;
+    max-width: 648px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 0 200px;
+    padding: 0 0 84px 0;
+    max-width: 648px;
   }
 }
 
@@ -44,18 +46,7 @@
 
 .presentation__image {
   width: 100%;
-  min-height: 177px;
-  object-fit: cover;
-
-  @media screen and (min-width: $tablet-width) {
-    min-height: 500px;
-    padding: 0 0 40px 0;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    min-height: 500px;
-    padding: 0 0 84px 0;
-  }
+  display: block;
 }
 
 .presentation__play {

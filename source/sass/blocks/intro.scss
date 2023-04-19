@@ -1,5 +1,4 @@
 .intro {
-  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,15 +6,9 @@
   align-items: center;
 }
 
-
 .intro__container {
+  width: 100%;
   position: relative;
-  width: 100%;
-}
-
-.intro__background-image {
-  width: 100%;
-  min-height: 389px;
   margin-bottom: 32px;
 
   &--form-page {
@@ -23,27 +16,51 @@
   }
 
   @media screen and (min-width: $tablet-width) {
-    min-height: 518px;
     margin-bottom: 47.5px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    min-height: 518px;
     margin-bottom: 59px;
   }
 }
 
+.intro__background-image {
+  width: 100%;
+}
+
 .intro__text-image {
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   &--form-page,
   &--media-page {
-    top: 50%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+.intro__divider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 57px;
+  background: url("../img/intro-divider-mobile.svg") no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: $tablet-width) {
+    background: url("../img/intro-divider-tablet.svg") no-repeat;
+    width: 100%;
+    background-position: center;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    background: url("../img/intro-divider-desktop.svg") no-repeat;
+    width: 1200px;
   }
 }
 
@@ -96,7 +113,7 @@
 .intro__description {
   max-width: 284px;
   margin: 0;
-  padding: 0 0 28px 0;
+  padding: 0 0 32px 0;
   text-align: center;
   text-transform: uppercase;
 

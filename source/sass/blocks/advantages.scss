@@ -2,6 +2,7 @@
   width: 100%;
 }
 
+
 .advantages__list {
   display: flex;
   flex-direction: column;
@@ -74,6 +75,8 @@
 }
 
 .advantages__text-wrapper {
+  min-height: 117px;
+
   @media screen and (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -115,7 +118,7 @@
 
   @media screen and (min-width: $desktop-width) {
     max-width: 400px;
-    padding: 50px;
+    padding: 52px 50px 51px 50px;
   }
 }
 
@@ -127,32 +130,37 @@
   text-transform: uppercase;
 
   @media screen and (min-width: $tablet-width) {
-    max-width: 190px;
-    margin: 0 0 23px 0;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    max-width: 128px;
+    max-width: 150px;
+    font-size: 21px;
   }
 }
 
 .advantages__count {
   margin: 0 0 17px 0;
 
-  @media screen and (min-width: $tablet-width) {
-    margin: 0 0 34px 0;
+  &--row-direction {
+    margin-bottom: 17px;
   }
 }
 
 .advantages__description {
+  max-width: 237px;
   margin: 0;
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 190px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 300px;
+  }
 }
 
-.advantages__picture {
-  display: block;
+.advantages__image {
   width: 100%;
+  display: block;
   object-fit: cover;
 }
 
@@ -202,7 +210,7 @@
   }
 
   &--accomodation {
-    background: url("../img/sub-list-house.png") no-repeat  top 23px left 18px;
+    background: url("../img/house-icon-mobile.svg") no-repeat  top left 18px;
     background-size: 40px 40px;
 
     @media screen and (min-width: $tablet-width) {
@@ -217,30 +225,30 @@
   }
 
   &--food {
-    background: url("/../img/sub-list-food.png") no-repeat top 23px left 18px;
+    background: url("/../img/food-icon-mobile.svg") no-repeat top left 18px;
 
     @media screen and (min-width: $tablet-width) {
       background-size: 80.22px 67.9px;
-      background-position: top 62px left 86.83px;
+      background-position: top 62px center;
     }
 
     @media screen and (min-width: $desktop-width) {
       background-size: 73.04px 68.9px;
-      background-position: top 72px left 149px;
+      background-position: top 72px center;
     }
   }
 
   &--souvenir {
-    background: url("../img/sub-list-souvenir.png") no-repeat top 23px left 18px;
+    background: url("../img/gift-icon-mobile.svg") no-repeat top left 18px;
 
     @media screen and (min-width: $tablet-width) {
       background-size: 66.51px 75px;
-      background-position: top 64px left 98.47px;
+      background-position: top 64px center;
     }
 
     @media screen and (min-width: $desktop-width) {
       background-size: 77.46px 75.02px;
-      background-position: top 69px left 147px;
+      background-position: top 69px center;
     }
   }
 }
