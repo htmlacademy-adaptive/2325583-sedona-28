@@ -6,7 +6,7 @@
   margin: 0;
 
   &:hover path {
-    fill: #81b3d2;
+    fill: $blue;
   }
 
   &:active path {
@@ -24,7 +24,7 @@
 }
 
 .copyright:hover .copyright__text {
-  color: #81b3d2;
+  color: $blue;
 }
 
 .copyright:active .copyright__text {

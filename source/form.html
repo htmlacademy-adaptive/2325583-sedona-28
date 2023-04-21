@@ -6,6 +6,8 @@
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Форма отзыва</title>
 </head>
 
@@ -42,20 +44,19 @@
       <h1 class="visually-hidden">Отзыв о Седоне</h1>
       <div class="intro__container">
         <picture class="hotel-search__pictures hotel-search__pictures--form-page">
-          <source media="(min-width: 1200px)" srcset="img/background-form-desktop.jpg" width="1200" height="300"
-            alt="изображение гор Седоны.">
-          <source media="(min-width: 768px)" srcset="img/background-form-tablet.jpg" width="768" height="290"
-            alt="изображение гор Седоны.">
+          <source media="(min-width: 1200px)"
+            srcset="img/background-form-desktop.jpg 1x, img/background-form-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/background-form-tablet.jpg 1x, img/background-form-tablet@2x.jpg 2x">
           <img class="intro__background-image intro__background-image--form-page" src="img/background-form-mobile.jpg"
-            width="320" height="158" alt="изображение гор Седоны.">
+            srcset="img/background-form-mobile@2x.jpg 2x" width="320" height="158" alt="изображение гор Седоны.">
         </picture>
         <picture class="hotel-search__text-pictures hotel-search__text-pictures--form-page">
-          <source media="(min-width: 1200px)" srcset="img/sedona-text-desktop.png" width="459.5" height="79.8"
-            alt="Седона.">
-          <source media="(min-width: 768px)" srcset="img/sedona-text-tablet.png" width="456.9" height="77.6"
-            alt="Седона.">
-          <img class="intro__text-image intro__text-image--form-page" src="img/sedona-text-mobile.png" width="229"
-            height="39" alt="Седона.">
+          <source media="(min-width: 1200px)"
+            srcset="img/sedona-text-desktop.png 1x, img/sedona-text-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/sedona-text-tablet.png 1x, img/sedona-text-tablet@2x.png 2x">
+          <img class="intro__text-image intro__text-image--form-page" src="img/sedona-text-mobile.png"
+            srcset="img/sedona-text-mobile@2x.png 2x" alt="Седона.">
         </picture>
         <span class="intro__divider"></span>
       </div>
@@ -117,22 +118,24 @@
           <ul class="hotel-review__radio-list">
             <li class="hotel-review__radio-item">
               <label class="hotel-review__radio-label">
-                <input class="hotel-review__radio-input" type="radio" hidden checked name="impression" value="positive">
-                <span class="hotel-review__control-mark" tabindex="0"></span>
+                <input class="hotel-review__radio-input" type="radio" visually-hidden checked name="impression"
+                  value="positive">
+                <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__radio-name">Скорее положительное</span>
               </label>
             </li>
             <li class="hotel-review__radio-item">
               <label class="hotel-review__radio-label">
-                <input class="hotel-review__radio-input" type="radio" hidden name="impression" value="negative">
-                <span class="hotel-review__control-mark" tabindex="0"></span>
+                <input class="hotel-review__radio-input" type="radio" visually-hidden name="impression"
+                  value="negative">
+                <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__radio-name">Скорее отрицательное</span>
               </label>
             </li>
             <li class="hotel-review__radio-item">
               <label class="hotel-review__radio-label">
-                <input class="hotel-review__radio-input" type="radio" hidden name="impression" value="neutral">
-                <span class="hotel-review__control-mark" tabindex="0"></span>
+                <input class="hotel-review__radio-input" type="radio" visually-hidden name="impression" value="neutral">
+                <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__radio-name">Затрудняюсь ответить</span>
               </label>
             </li>
@@ -143,29 +146,30 @@
           <ul class="hotel-review__checkbox-list">
             <li class="hotel-review__checkbox-item">
               <label class="hotel-review__checkbox-label">
-                <input class="hotel-review__checkbox-input" type="checkbox" checked name="devil-bridge" hidden>
-                <span class="hotel-review__control-mark" tabindex="0"></span>
+                <input class="hotel-review__checkbox-input" type="checkbox" checked name="devil-bridge" visually-hidden>
+                <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__checkbox-name">Мост Дьявола</span>
               </label>
             </li>
             <li class="hotel-review__checkbox-item">
               <label class="hotel-review__checkbox-label">
-                <input class="hotel-review__checkbox-input" type="checkbox" checked name="bell-mountain" hidden>
-                <span class="hotel-review__control-mark" tabindex="0"></span>
+                <input class="hotel-review__checkbox-input" type="checkbox" checked name="bell-mountain"
+                  visually-hidden>
+                <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__checkbox-name">Гора-Колокол</span>
               </label>
             </li>
             <li class="hotel-review__checkbox-item">
               <label class="hotel-review__checkbox-label">
-                <input class="hotel-review__checkbox-input" type="checkbox" checked name="slide-park" hidden>
-                <span class="hotel-review__control-mark" tabindex="0"></span>
+                <input class="hotel-review__checkbox-input" type="checkbox" checked name="slide-park" visually-hidden>
+                <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__checkbox-name">Слайд-Парк</span>
               </label>
             </li>
             <li class="hotel-review__checkbox-item">
               <label class="hotel-review__checkbox-label">
-                <input class="hotel-review__checkbox-input" type="checkbox" name="red-mountains" hidden>
-                <span class="hotel-review__control-mark" tabindex="0"></span>
+                <input class="hotel-review__checkbox-input" type="checkbox" name="red-mountains">
+                <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__checkbox-name">Красные скалы</span>
               </label>
             </li>
