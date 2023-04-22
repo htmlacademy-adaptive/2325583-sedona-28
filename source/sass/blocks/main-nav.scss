@@ -213,6 +213,10 @@
       background-color: #5496bd;
       color: rgba(255, 255, 255, 0.3);
     }
+
+    &:focus {
+      border: 1px solid $black;
+    }
   }
 
   @media screen and (min-width: $tablet-width) {

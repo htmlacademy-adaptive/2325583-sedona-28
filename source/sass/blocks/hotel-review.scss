@@ -21,11 +21,11 @@
       content: "";
       position: absolute;
       top: -14px;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
+      right: 0;
       height: 1px;
-      min-width: 320px;
       background-color: #dbdbdb;
+      margin: 0 -20px;
     }
   }
 
@@ -112,6 +112,7 @@
       left: 0;
       top: 50%;
       background-color: #dbdbdb;
+      width: calc(24.8% - 60px);
     }
 
     @media screen and (min-width: $desktop-width) {
@@ -128,6 +129,7 @@
       right: 0;
       top: 50%;
       background-color: #dbdbdb;
+      width: calc(24.8% - 60px);
     }
 
     @media screen and (min-width: $desktop-width) {
@@ -170,8 +172,14 @@
     background-color: #e5e5e5;
   }
 
+  &:focus:not(:active):not(:hover) {
+    outline: 2px solid $black;
+  }
+
   &:active {
     background-color: $white;
+    outline: none;
+    border: 4px solid rgba(229, 229, 229, 1);
   }
 }
 
@@ -243,19 +251,13 @@
 }
 
 .hotel-review__radio-name {
-  margin-left: 62px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin: 0 0 0 16px;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 10px 33px 10px 16px;
-  }
-}
-
-.hotel-review__radio-name:last-child {
-  @media (min-width: $desktop-width) {
-    padding-right: 0;
+    padding: 10px 33px 10px 0;
   }
 }
 
@@ -341,17 +343,13 @@
   width: 46px;
   height: 46px;
   margin: 0;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .hotel-review__checkbox-name {
-  margin-left: 62px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin: 0 0 0 16px;
 }
 
 .hotel-review__checkbox-input + .hotel-review__control-mark {
@@ -366,7 +364,7 @@
   }
 
   &:active {
-    opacity: 0.3;
+    background: #f2f2f2 url("../img/checkbox-icon-grey.svg") no-repeat center;
   }
 }
 

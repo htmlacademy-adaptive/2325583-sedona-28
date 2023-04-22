@@ -1,12 +1,16 @@
 .presentation {
-  padding: 0 27px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
 
   @media screen and (min-width: $tablet-width) {
+    margin: 0 0 40px 0;
     padding: 0 60px;
   }
 
   @media screen and (min-width: $desktop-width) {
+    margin: 0 0 84px 0;
     padding: 0 200px;
   }
 }
@@ -38,23 +42,26 @@
   }
 }
 
+.presentation__text-wrapper {
+  max-width: 266px;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 445px;
+  }
+}
+
 .presentation__wrapper {
   position: relative;
+  width: 100%;
 }
 
 .presentation__image {
   width: 100%;
-  min-height: 177px;
+  display: block;
   object-fit: cover;
 
   @media screen and (min-width: $tablet-width) {
-    min-height: 500px;
-    padding: 0 0 40px 0;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    min-height: 500px;
-    padding: 0 0 84px 0;
+    height: 500px;
   }
 }
 

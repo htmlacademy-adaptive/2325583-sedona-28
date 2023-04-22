@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Каталог Отелей Седоны</title>
 </head>
 
@@ -38,10 +41,25 @@
   <main class="main-container">
     <section class="intro">
       <h1 class="visually-hidden">Фотографии Седоны</h1>
-      <img class="intro__background-image intro__background-image--media-page" src="img/background-form.jpg" width="320"
-        height="214" alt="изображение гор Седоны.">
-      <img class="intro__text-image intro__text-image--media-page" src="img/sedona-text.png" width="229" height="39"
-        alt="Седона.">
+      <div class="intro__container">
+        <picture class="hotel-search__pictures hotel-search__pictures--media-page">
+          <source media="(min-width: 1200px)"
+            srcset="img/background-form-desktop.jpg 1x, img/background-form-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/background-form-tablet.jpg 1x, img/background-form-tablet@2x.jpg 2x">
+          <img class="intro__background-image intro__background-image--media-page" width="320" height="214"
+            src="img/background-catalog-mobile.jpg" srcset="img/background-catalog-mobile@2x.jpg 2x"
+            alt="изображение гор Седоны.">
+        </picture>
+        <picture class="hotel-search__text-pictures hotel-search__text-pictures--media-page">
+          <source media="(min-width: 1200px)"
+            srcset="img/sedona-text-desktop.png 1x, img/sedona-text-desktop@2x.png 2x">>
+          <source media="(min-width: 768px)" srcset="img/sedona-text-tablet.png 1x, img/sedona-text-tablet@2x.png 2x">>
+          <img class="intro__text-image intro__text-image--media-page" src="img/sedona-text-mobile.png"
+            srcset="img/sedona-text-mobile@2x.png 2x" width="229" height="39" alt="Седона.">
+        </picture>
+        <span class="intro__divider"></span>
+      </div>
       <h2 class="intro__lead intro__lead">Фото и Видео</h2>
       <p class="intro__description intro__description--media-page">
         Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
@@ -51,8 +69,14 @@
     <section class="images">
       <ul class="images__list">
         <li class="images__item">
-          <img class="images__picture" src="img/catalog-mobile-photo-1.jpg" width="280" height="280"
-            alt="дорога на закате.">
+          <picture class="images__pictures">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-desktop-photo-1.jpg 1x, img/catalog-desktop-photo-1@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-tablet-photo-1.jpg 1x, img/catalog-tablet-photo-1@2x.jpg 2x">
+            <img class="images__photo images__photo images__photo--height-changer" src="img/catalog-mobile-photo-1.jpg"
+              srcset="img/catalog-mobile-photo-1@2x.jpg 2x" width="280" height="280" alt="дорога на закате.">
+          </picture>
           <div class="images__container">
             <h3 class="images__title">Неродные просторы</h3>
             <p class="images__authors">Автор фото: Борис</p>
@@ -69,8 +93,14 @@
           </div>
         </li>
         <li class="images__item">
-          <img class="images__picture" src="img/catalog-mobile-photo-2.jpg" width="280" height="280"
-            alt="растительность Седоны.">
+          <picture class="images__pictures">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-desktop-photo-2.jpg 1x, img/catalog-desktop-photo-2@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-tablet-photo-2.jpg 1x, img/catalog-tablet-photo-2@2x.jpg 2x">
+            <img class="images__photo" src="img/catalog-mobile-photo-2.jpg"
+              srcset="img/catalog-mobile-photo-2@2x.jpg 2x" width="280" height="280" alt="растительность Седоны.">
+          </picture>
           <div class="images__container">
             <h3 class="images__title">Местная растительность</h3>
             <p class="images__authors">Автор фото: Сергей</p>
@@ -82,8 +112,14 @@
         </li>
         </li>
         <li class="images__item">
-          <img class="images__picture" src="img/catalog-mobile-photo-3.jpg" width="280" height="280"
-            alt="серпантины Седоны.">
+          <picture class="images__pictures">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-desktop-photo-3.jpg 1x, img/catalog-desktop-photo-3@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-tablet-photo-3.jpg 1x, img/catalog-tablet-photo-3@2x.jpg 2x">
+            <img class="images__photo" src="img/catalog-mobile-photo-3.jpg"
+              srcset="img/catalog-mobile-photo-3@2x.jpg 2x" width="280" height="280" alt="серпантины Седоны.">
+          </picture>
           <div class="images__container images__container--dark-grey">
             <h3 class="images__title">Дорога на север</h3>
             <p class="images__authors">Автор фото: Петр</p>
@@ -94,8 +130,15 @@
           </div>
         </li>
         <li class="images__item">
-          <img class="images__picture" src="img/catalog-mobile-photo-4.jpg" width="280" height="280"
-            alt="мост дьявола, расположенный в каньоне.">
+          <picture class="images__pictures">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-desktop-photo-4.jpg 1x, img/catalog-desktop-photo-4@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-tablet-photo-4.jpg 1x, img/catalog-tablet-photo-4@2x.jpg 2x">
+            <img class="images__photo" src="img/catalog-mobile-photo-4.jpg"
+              srcset="img/catalog-mobile-photo-4@2x.jpg 2x" width="280" height="280"
+              alt="мост дьявола, расположенный в каньоне.">
+          </picture>
           <div class="images__container">
             <h3 class="images__title">Мост дьявола</h3>
             <p class="images__authors">Автор фото: Антон</p>
@@ -109,13 +152,21 @@
     </section>
 
     <section class="presentation">
-      <h2 class="presentation__lead">Все еще сомневаетесь?</h2>
-      <p class="presentation__description">
-        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-      </p>
+      <div class="presentation__text-wrapper">
+        <h2 class="presentation__lead">Все еще сомневаетесь?</h2>
+        <p class="presentation__description">
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        </p>
+      </div>
       <div class="presentation__wrapper">
-        <img class="presentation__image" src="img/presentation-video-mobile.jpg" width="280" height="177"
-          alt="презентация видео о Седоне.">
+        <picture class="presentations__pictures">
+          <source media="(min-width: 1200px)"
+            srcset="img/presentation-video-desktop.jpg 1x, img/presentation-video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/presentation-video-tablet.jpg 1x, img/presentation-video-tablet@2x.jpg 2x">
+          <img class="presentation__image" src="img/presentation-video-mobile.jpg"
+            srcset="img/presentation-video-mobile@2x.jpg 2x" width="280" height="177" alt="презентация видео о Седоне.">
+        </picture>
         <button class="presentation__play">
           <span class="visually-hidden">запустить видео</span>
         </button>

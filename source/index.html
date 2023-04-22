@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Седона</title>
 </head>
 
@@ -39,11 +42,23 @@
     <section class="intro">
       <h1 class="visually-hidden">Седона-городок в Аризоне.</h1>
       <div class="intro__container">
-        <img class="intro__background-image" src="img/background-mobile.jpg" width="320" height="389"
-          alt="изображение гор Седоны.">
-        <img class="intro__text-image" src="img/background-text.png" width="282" height="214"
-          alt="Добро пожаловать в Седону.">
+        <picture class="hotel-search__pictures">
+          <source media="(min-width: 1200px)" srcset="img/background-desktop.jpg 1x, img/background-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/background-tablet.jpg 1x, img/background-tablet@2x.jpg 2x">
+          <img class="intro__background-image" src="img/background-mobile.jpg" srcset="img/background-mobile@2x.jpg 2x"
+            width="320" height="389" alt="изображение гор Седоны.">
+        </picture>
+        <picture class="hotel-search__text-pictures">
+          <source media="(min-width: 1200px)"
+            srcset="img/background-text-desktop.png 1x, img/background-text-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/background-text-tablet.png 1x, img/background-text-tablet@2x.png 2x">
+          <img class="intro__text-image" src="img/background-text-mobile.png"
+            srcset="img/background-text-mobile@2x.png 2x" width="282" height="214" alt="Добро пожаловать в Седону.">
+        </picture>
+        <span class="intro__divider"></span>
       </div>
+
       <h2 class="intro__lead">
         Седона — небольшой городок в аризоне,<br> заслуживающий большего!
       </h2>
@@ -62,8 +77,16 @@
               <span class="advantages__count">— №1 —</span>
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="advantages__picture" src="img/advantages-town-picture.jpg" width="320" height="260"
-              alt="Изображение домов">
+            <div class="advantages__pictures-container">
+              <picture class="advantages__pictures">
+                <source media="(min-width: 1200px)"
+                  srcset="img/town-picture-desktop.jpg 1x, img/town-picture-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/town-picture-tablet.jpg 1x, img/town-picture-tablet@2x.jpg 2x">
+                <img class="advantages__image" src="img/town-picture-mobile.jpg"
+                  srcset="img/town-picture-mobile@2x.jpg 2x" width="320" height="260" alt="Изображение домов.">
+              </picture>
+            </div>
           </div>
           <ul class="advantages__sublist">
             <li class="advantages__subitem advantages__subitem--accomodation">
@@ -85,8 +108,16 @@
         </li>
         <li class="advantages__item advantages__item--blue-background">
           <div class="advantages__content">
-            <img class="advantages__picture" src="img/advantages-canyon-picture.jpg" width="320" height="260"
-              alt="Изображение каньона">
+            <div class="advantages__pictures-container">
+              <picture class="advantages__pictures">
+                <source media="(min-width: 1200px)"
+                  srcset="img/canyon-picture-desktop.jpg 1x, img/canyon-picture-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/canyon-picture-tablet.jpg 1x, img/canyon-picture-tablet@2x.jpg 2x">
+                <img class="advantages__image" src="img/canyon-picture-mobile.jpg"
+                  srcset="img/canyon-picture-mobile@2x.jpg 2x" width="320" height="260" alt="Изображение каньона">
+              </picture>
+            </div>
             <div class="advantages__content-text">
               <h3 class="advantages__title">Там есть мост дьявола</h3>
               <span class="advantages__count">— №2 —</span>
@@ -95,25 +126,19 @@
           </div>
         </li>
         <li class="advantages__item advantages__item--row-direction">
-          <div class="advantages__text-wrapper">
-            <h3 class="advantages__title">Небольшая площадь</h3>
-            <span class="advantages__count">— №3 —</span>
-            <p class="advantages__description">все интересные места находятся близко</p>
-          </div>
-        </li>
-        <li class="advantages__item advantages__item--row-direction advantages__item--divider">
-          <div class="advantages__text-wrapper">
-            <h3 class="advantages__title">Красивая дорога</h3>
-            <span class="advantages__count advantages__count">— №4 —</span>
-            <p class="advantages__description">ехать в седону из лас-вегаса совсем не скучно!</p>
-          </div>
+          <h3 class="advantages__title">Небольшая площадь</h3>
+          <span class="advantages__count advantages__count">— №3 —</span>
+          <p class="advantages__description">все интересные места находятся близко</p>
         </li>
         <li class="advantages__item advantages__item--row-direction">
-          <div class="advantages__text-wrapper">
-            <h3 class="advantages__title">Мало туристов</h3>
-            <span class="advantages__count">— №5 —</span>
-            <p class="advantages__description">большинство едет в гранд каньон и толпится там</p>
-          </div>
+          <h3 class="advantages__title">Красивая дорога</h3>
+          <span class="advantages__count">— №4 —</span>
+          <p class="advantages__description">ехать в седону из лас-вегаса совсем не скучно!</p>
+        </li>
+        <li class="advantages__item advantages__item--row-direction">
+          <h3 class="advantages__title">Мало туристов</h3>
+          <span class="advantages__count">— №5 —</span>
+          <p class="advantages__description">большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
     </section>
@@ -128,12 +153,10 @@
       </div>
       <div class="hotel-search__map">
         <picture class="hotel-search__map-pictures">
-          <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg" width="1200px" height="350px"
-            alt="Местоположение гостиниц Седоны, версия для персонального компьютера.">
-          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg" width="768" height="350"
-            alt="Местоположение гостиниц Седоны, версия для планшета.">
-          <img class="hotel-search__map-image" src="img/map-mobile.jpg" width="320" height="350"
-            alt="Местоположение гостиниц Седоны, мобильная версия.">
+          <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="hotel-search__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320"
+            height="350" alt="Местоположение гостиниц Седоны.">
         </picture>
         <svg class="hotel-search__map-dot" width="27" height="27" viewBox="0 0 27 27" fill="none"
           xmlns="http://www.w3.org/2000/svg">
