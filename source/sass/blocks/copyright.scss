@@ -4,14 +4,6 @@
   justify-content: center;
   text-decoration: none;
   margin: 0;
-
-  &:hover path {
-    fill: $blue;
-  }
-
-  &:active path {
-    fill: #b3b3b3;
-  }
 }
 
 .copyright__text {
@@ -29,4 +21,18 @@
 
 .copyright:active .copyright__text {
   color: #b3b3b3;
+}
+
+.copyright__icon {
+  width: 28px;
+  height: 35px;
+  fill: $black;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: #b3b3b3;
+  }
 }
