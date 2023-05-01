@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
@@ -41,13 +41,19 @@
   <main class="main-container">
     <section class="intro">
       <h1 class="visually-hidden">Фотографии Седоны</h1>
-      <div class="intro__container">
+      <div class="intro__container intro__container--media-page">
         <picture class="hotel-search__pictures hotel-search__pictures--media-page">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/background-form-desktop.webp 1x, img/background-form-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/background-form-tablet.webp 1x, img/background-form-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/background-catalog-mobile.webp 1x, img/background-catalog-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)"
             srcset="img/background-form-desktop.jpg 1x, img/background-form-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)"
             srcset="img/background-form-tablet.jpg 1x, img/background-form-tablet@2x.jpg 2x">
-          <img class="intro__background-image intro__background-image--media-page" width="320" height="214"
+          <img class="intro__background-image intro__background-image--media-page" width="320" height="158"
             src="img/background-catalog-mobile.jpg" srcset="img/background-catalog-mobile@2x.jpg 2x"
             alt="изображение гор Седоны.">
         </picture>
@@ -55,7 +61,7 @@
           alt="Седона.">
         <span class="intro__divider"></span>
       </div>
-      <h2 class="intro__lead intro__lead">Фото и Видео</h2>
+      <h2 class="intro__lead intro__lead--media-page">Фото и Видео</h2>
       <p class="intro__description intro__description--media-page">
         Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
       </p>
@@ -79,8 +85,10 @@
               srcset="img/catalog-mobile-photo-1@2x.jpg 2x" width="280" height="280" alt="дорога на закате.">
           </picture>
           <div class="images__container">
-            <h3 class="images__title">Неродные просторы</h3>
-            <p class="images__authors">Автор фото: Борис</p>
+            <div class="images__text-wrapper">
+              <h3 class="images__title">Неродные просторы</h3>
+              <p class="images__authors">Автор фото: Борис</p>
+            </div>
             <div class="images__count">
               <span class="images__like-count"></span>
               <span class="images__number">1350</span>
@@ -89,6 +97,12 @@
         </li>
         <li class="images__item">
           <picture class="images__pictures">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/catalog-desktop-photo-2.webp 1x, img/catalog-desktop-photo-2@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/catalog-tablet-photo-2.webp 1x, img/catalog-tablet-photo-2@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/catalog-mobile-photo-2.webp 1x, img/catalog-mobile-photo-2@2x.webp 2x">
             <source media="(min-width: 1200px)"
               srcset="img/catalog-desktop-photo-2.jpg 1x, img/catalog-desktop-photo-2@2x.jpg 2x">
             <source media="(min-width: 768px)"
@@ -97,17 +111,24 @@
               srcset="img/catalog-mobile-photo-2@2x.jpg 2x" width="280" height="280" alt="растительность Седоны.">
           </picture>
           <div class="images__container">
-            <h3 class="images__title">Местная растительность</h3>
-            <p class="images__authors">Автор фото: Сергей</p>
+            <div class="images__text-wrapper">
+              <h3 class="images__title">Местная растительность</h3>
+              <p class="images__authors">Автор фото: Сергей</p>
+            </div>
             <div class="images__count">
               <span class="images__like-count"></span>
               <span class="images__number">143</span>
             </div>
           </div>
         </li>
-        </li>
         <li class="images__item">
           <picture class="images__pictures">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/catalog-desktop-photo-3.webp 1x, img/catalog-desktop-photo-3@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/catalog-tablet-photo-3.webp 1x, img/catalog-tablet-photo-3@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/catalog-mobile-photo-3.webp 1x, img/catalog-mobile-photo-3@2x.webp 2x">
             <source media="(min-width: 1200px)"
               srcset="img/catalog-desktop-photo-3.jpg 1x, img/catalog-desktop-photo-3@2x.jpg 2x">
             <source media="(min-width: 768px)"
@@ -116,8 +137,10 @@
               srcset="img/catalog-mobile-photo-3@2x.jpg 2x" width="280" height="280" alt="серпантины Седоны.">
           </picture>
           <div class="images__container images__container--dark-grey">
-            <h3 class="images__title">Дорога на север</h3>
-            <p class="images__authors">Автор фото: Петр</p>
+            <div class="images__text-wrapper">
+              <h3 class="images__title">Дорога на север</h3>
+              <p class="images__authors">Автор фото: Петр</p>
+            </div>
             <div class="images__count">
               <span class="images__like-count"></span>
               <span class="images__number">96</span>
@@ -126,6 +149,12 @@
         </li>
         <li class="images__item">
           <picture class="images__pictures">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/catalog-desktop-photo-4.webp 1x, img/catalog-desktop-photo-4@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/catalog-tablet-photo-4.webp 1x, img/catalog-tablet-photo-4@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/catalog-mobile-photo-4.webp 1x, img/catalog-mobile-photo-4@2x.webp 2x">
             <source media="(min-width: 1200px)"
               srcset="img/catalog-desktop-photo-4.jpg 1x, img/catalog-desktop-photo-4@2x.jpg 2x">
             <source media="(min-width: 768px)"
@@ -135,8 +164,10 @@
               alt="мост дьявола, расположенный в каньоне.">
           </picture>
           <div class="images__container">
-            <h3 class="images__title">Мост дьявола</h3>
-            <p class="images__authors">Автор фото: Антон</p>
+            <div class="images__text-wrapper">
+              <h3 class="images__title">Мост дьявола</h3>
+              <p class="images__authors">Автор фото: Антон</p>
+            </div>
             <div class="images__count">
               <span class="images__like-count"></span>
               <span class="images__number">254</span>
@@ -155,6 +186,12 @@
       </div>
       <div class="presentation__wrapper">
         <picture class="presentations__pictures">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/presentation-video-desktop.webp 1x, img/presentation-video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/presentation-video-tablet.webp 1x, img/presentation-video-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/presentation-video-mobile.webp 1x, img/presentation-video-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)"
             srcset="img/presentation-video-desktop.jpg 1x, img/presentation-video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)"

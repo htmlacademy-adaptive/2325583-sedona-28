@@ -1,5 +1,10 @@
 .advantages {
   width: 100%;
+  padding: 30px 0 0 0;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 
@@ -45,7 +50,7 @@
   }
 
   &--row-direction {
-    padding: 24px 18px;
+    padding: 25px 18px;
 
     @media screen and (min-width: $tablet-width) {
       width: 33.33%;
@@ -79,7 +84,6 @@
 .advantages__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
 
   @media screen and (min-width: $tablet-width) {
@@ -111,6 +115,11 @@
 .advantages__pictures-container {
   width: 100%;
 
+
+  @media screen and (max-width: $mobile-width-only) {
+    order: 2;
+  }
+
   @media screen and (min-width: $tablet-width) {
     width: 66.66%;
   }
@@ -132,13 +141,13 @@
 .advantages__count {
   margin: 0 0 17px 0;
 
-  &--row-direction {
-    margin-bottom: 17px;
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 0 25px 0;
   }
 }
 
 .advantages__description {
-  max-width: 237px;
+  max-width: 270px;
   margin: 0;
   text-transform: uppercase;
   text-align: center;
@@ -150,6 +159,18 @@
   @media screen and (min-width: $desktop-width) {
     max-width: 300px;
   }
+
+  &--row-direction {
+    max-width: 250px;
+
+    @media screen and (min-width: $tablet-width) {
+      max-width: 200px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      max-width: 275px;
+    }
+  }
 }
 
 .advantages__image {
@@ -158,7 +179,7 @@
   object-fit: cover;
 
   @media screen and (min-width: $tablet-width) {
-    height: 256px;
+    height: 100%;
   }
 }
 
@@ -166,8 +187,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 25px;
-  padding: 25px 0 46px 0;
+  padding: 0 0 46px 0;
   margin: 0;
   list-style-type: none;
   background-color: $white;
@@ -179,7 +199,6 @@
     justify-content: space-between;
     min-height: 331px;
     padding: 0;
-    gap: 0;
   }
 }
 
@@ -188,8 +207,7 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 0 0 0 65px;
-
+  padding: 34px 0 0 65px;
 
   @media screen and (min-width: $tablet-width) {
     min-height: 331px;
@@ -207,22 +225,24 @@
   }
 
   &--accomodation {
-    background: url("../img/house-icon-mobile.svg") no-repeat  top left 18px;
+    padding-top: 30px;
+    background: url("../img/house-icon-mobile.svg") no-repeat  top 23px left 18px;
     background-size: 40px 40px;
 
     @media screen and (min-width: $tablet-width) {
+      padding: 0;
       background-size: 77px 72px;
       background-position: top 60px left 88px;
     }
 
     @media screen and (min-width: $desktop-width) {
       background-size: 79px 72px;
-      background-position: top 69px left 145px;
+      background-position: top 69px left 159px;
     }
   }
 
   &--food {
-    background: url("/../img/food-icon-mobile.svg") no-repeat top left 18px;
+    background: url("/../img/food-icon-mobile.svg") no-repeat top 27px left 18px;
 
     @media screen and (min-width: $tablet-width) {
       background-size: 80px 68px;
@@ -236,7 +256,7 @@
   }
 
   &--souvenir {
-    background: url("../img/gift-icon-mobile.svg") no-repeat top left 18px;
+    background: url("../img/gift-icon-mobile.svg") no-repeat top 27px left 22px;
 
     @media screen and (min-width: $tablet-width) {
       background-size: 67px 75px;
@@ -257,6 +277,11 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 21px;
+    margin: 0 0 24px 0;
+  }
 }
 
 .advantages__subdescription {
@@ -265,12 +290,34 @@
   max-width: 237px;
 
   @media screen and (min-width: $tablet-width) {
-    max-width: 190px;
-    padding: 0 0 60px 0;
+    max-width: 180px;
+    padding: 0 0 63px 0;
   }
 
   @media screen and (min-width: $desktop-width) {
-
     padding: 0 0 69px 0;
+    max-width: 300px;
+  }
+
+  &-food {
+    @media screen and (min-width: $tablet-width) {
+      max-width: 155px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      max-width: 300px;
+    }
+  }
+
+  &--souvenir {
+    br {
+      display: none;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      br {
+        display: inline;
+      }
+    }
   }
 }

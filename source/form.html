@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
@@ -41,8 +41,13 @@
   <main class="main-container">
     <section class="intro">
       <h1 class="visually-hidden">Отзыв о Седоне</h1>
-      <div class="intro__container">
+      <div class="intro__container intro__container--form-page">
         <picture class="hotel-search__pictures hotel-search__pictures--form-page">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/background-form-desktop.webp 1x, img/background-form-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/background-form-tablet.webp 1x, img/background-form-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/background-form-mobile.webp 1x, img/background-form-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)"
             srcset="img/background-form-desktop.jpg 1x, img/background-form-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)"
@@ -69,17 +74,17 @@
             <h3 class="hotel-review__title">Представьтесь:</h3>
             <ul class="hotel-review__text-list">
               <li class="hotel-review__text-item">
-                <label class="hotel-review__text-label">Имя*:
+                <label class="hotel-review__text-label"><span class="hotel-review__name">Имя*:</span>
                   <input class="hotel-review__text-input" type="text" name="name" placeholder="Пётр">
                 </label>
               </li>
               <li class="hotel-review__text-item">
-                <label class="hotel-review__text-label">Фамилия*:
+                <label class="hotel-review__text-label"><span class="hotel-review__name">Фамилия*:</span>
                   <input class="hotel-review__text-input" type="text" name="surname" placeholder="Пустота">
                 </label>
               </li>
               <li class="hotel-review__text-item">
-                <label class="hotel-review__text-label">Отчество:
+                <label class="hotel-review__text-label"><span class="hotel-review__name">Отчество:</span>
                   <input class="hotel-review__text-input" type="text" name="middle-name" placeholder="Викторович">
                 </label>
               </li>
@@ -90,7 +95,7 @@
             <ul class="hotel-review__text-list">
               <li class="hotel-review__text-item">
                 <div class="hotel-review__input-wrapper">
-                  <label class="hotel-review__text-label">Контактный номер*:
+                  <label class="hotel-review__text-label"><span class="hotel-review__name">Контактный телефон*:</span>
                     <input class="hotel-review__text-input" type="tel" name="phone" placeholder="Введите телефон">
                     <span class="hotel-review__text-icon hotel-review__text-icon--telephone"></span>
                   </label>
@@ -98,21 +103,21 @@
               </li>
               <li class="hotel-review__text-item">
                 <div class="hotel-review__input-wrapper">
-                  <label class="hotel-review__text-label">Электронная почта*:
+                  <label class="hotel-review__text-label"><span class="hotel-review__name">Электронная почта*:</span>
                     <input class="hotel-review__text-input" type="email" name="user-email" placeholder="Введите e-mail">
                     <span class="hotel-review__text-icon hotel-review__text-icon--mail"></span>
                   </label>
+                </div>
               </li>
-        </div>
-        </ul>
-        </fieldset>
+            </ul>
+          </fieldset>
         </div>
         <fieldset class="hotel-review__fieldset hotel-review__fieldset--radio">
           <h3 class="hotel-review__title hotel-review__title--double-line">Ваше общее впечатление:</h3>
           <ul class="hotel-review__radio-list">
             <li class="hotel-review__radio-item">
               <label class="hotel-review__radio-label">
-                <input class="hotel-review__radio-input" type="radio" visually-hidden checked name="impression"
+                <input class="hotel-review__radio-input  visually-hidden" type="radio" checked name="impression"
                   value="positive">
                 <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__radio-name">Скорее положительное</span>
@@ -120,7 +125,7 @@
             </li>
             <li class="hotel-review__radio-item">
               <label class="hotel-review__radio-label">
-                <input class="hotel-review__radio-input" type="radio" visually-hidden name="impression"
+                <input class="hotel-review__radio-input  visually-hidden" type="radio" name="impression"
                   value="negative">
                 <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__radio-name">Скорее отрицательное</span>
@@ -128,7 +133,8 @@
             </li>
             <li class="hotel-review__radio-item">
               <label class="hotel-review__radio-label">
-                <input class="hotel-review__radio-input" type="radio" visually-hidden name="impression" value="neutral">
+                <input class="hotel-review__radio-input  visually-hidden" type="radio" name="impression"
+                  value="neutral">
                 <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__radio-name">Затрудняюсь ответить</span>
               </label>
@@ -140,41 +146,44 @@
           <ul class="hotel-review__checkbox-list">
             <li class="hotel-review__checkbox-item">
               <label class="hotel-review__checkbox-label">
-                <input class="hotel-review__checkbox-input" type="checkbox" checked name="devil-bridge" visually-hidden>
+                <input class="hotel-review__checkbox-input  visually-hidden" type="checkbox" checked
+                  name="devil-bridge">
                 <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__checkbox-name">Мост Дьявола</span>
               </label>
             </li>
             <li class="hotel-review__checkbox-item">
               <label class="hotel-review__checkbox-label">
-                <input class="hotel-review__checkbox-input" type="checkbox" checked name="bell-mountain"
-                  visually-hidden>
+                <input class="hotel-review__checkbox-input  visually-hidden" type="checkbox" checked
+                  name="bell-mountain">
                 <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__checkbox-name">Гора-Колокол</span>
               </label>
             </li>
             <li class="hotel-review__checkbox-item">
               <label class="hotel-review__checkbox-label">
-                <input class="hotel-review__checkbox-input" type="checkbox" checked name="slide-park" visually-hidden>
+                <input class="hotel-review__checkbox-input  visually-hidden" type="checkbox" checked name="slide-park">
                 <span class="hotel-review__control-mark"></span>
-                <span class="hotel-review__checkbox-name">Слайд-Парк</span>
+                <span class="hotel-review__checkbox-name">Слайд-парк</span>
               </label>
             </li>
             <li class="hotel-review__checkbox-item">
               <label class="hotel-review__checkbox-label">
-                <input class="hotel-review__checkbox-input" type="checkbox" name="red-mountains">
+                <input class="hotel-review__checkbox-input  visually-hidden" type="checkbox" name="red-mountains">
                 <span class="hotel-review__control-mark"></span>
                 <span class="hotel-review__checkbox-name">Красные скалы</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="hotel-review__fieldset">
+        <fieldset class="hotel-review__fieldset hotel-review__fieldset--textarea">
           <h3 class="hotel-review__title hotel-review__title--double-line">Опишите свои эмоции:</h3>
-          <label class="hotel-review__textarea-label">
-            <textarea class="hotel-review__textarea" name="message"
-              placeholder="Опишите подробно все свои восторги"></textarea>
-          </label>
+          <div class="hotel-review__textarea-wrapper">
+            <label class="hotel-review__textarea-label">
+              <textarea class="hotel-review__textarea" name="message"
+                placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
+          </div>
         </fieldset>
         <div class="hotel-review__button-container">
           <button class="hotel-review__button button" type="submit">Отправить отзыв
