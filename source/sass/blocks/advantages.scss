@@ -268,12 +268,12 @@
     @media screen and (min-width: $tablet-width) {
       padding: 0;
       background-size: 77px 72px;
-      background-position: top 60px left 88px;
+      background-position: top 60px center
     }
 
     @media screen and (min-width: $desktop-width) {
       background-size: 79px 72px;
-      background-position: top 69px left 159px;
+      background-position: top 69px center
     }
   }
 
