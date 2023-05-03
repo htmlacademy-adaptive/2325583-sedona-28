@@ -11,8 +11,8 @@
 }
 
 .hotel-review__fieldset {
-  margin: 0;
   padding: 0;
+  margin: 0 0 62px 0;
   border: none;
   position: relative;
 
@@ -38,14 +38,26 @@
   }
 
   &--radio {
+    margin: 0 0 48px 0;
+
     @media screen and (min-width: $desktop-width) {
       min-width: 960px;
     }
   }
 
   &--checkbox {
+    margin: 0;
+
     @media screen and (min-width: $desktop-width) {
       min-width: 960px;
+    }
+  }
+
+  &--textarea {
+    margin: 0 0 50px 0;
+
+    @media screen and (min-width: $tablet-width) {
+      margin: 0;
     }
   }
 }
@@ -56,7 +68,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 59px;
 
   @media screen and (min-width: $tablet-width) {
     position: relative;
@@ -82,6 +93,7 @@
 
   @media screen and (min-width: $desktop-width) {
     min-width: 960px;
+    margin: 0 0 10px 0;
   }
 }
 
@@ -95,12 +107,13 @@
   text-align: center;
 
   @media screen and (min-width: $tablet-width) {
-    margin: 0 0 28px 0;
+    margin: 0 0 29px 0;
     font-size: 21px;
   }
 
   @media screen and (min-width: $desktop-width) {
     font-size: 21px;
+    margin: 0 0 28px 0;
   }
 
   &--double-line::before {
@@ -154,11 +167,16 @@
 .hotel-review__text-label {
   position: relative;
   display: block;
+  text-transform: uppercase;
+}
+
+.hotel-review__name {
+  padding: 0 0 0 16px;
 }
 
 .hotel-review__text-input {
   font-family: inherit;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 16px;
   width: 100%;
   min-height: 58px;
   font-weight: 700;
@@ -225,7 +243,7 @@
 }
 
 .hotel-review__radio-list {
-  margin: 0 0 49px 0;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -238,14 +256,14 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    margin: 0 0 48px 0;
-    padding-left: 16px;
+    margin: 0;
+    padding: 0 0 0 36px;
   }
 
   @media screen and(min-width: $desktop-width) {
     gap: 28px;
-    margin: 0 0 56px 0;
-    padding: 0;
+    margin: 0 0 25px 0;
+    padding: 15px 0 0 26px;
     justify-content: center;
   }
 }
@@ -254,7 +272,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 62px;
 
   @media screen and (min-width: $tablet-width) {
     padding: 10px 33px 10px 0;
@@ -317,13 +335,24 @@
   @media screen and (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px;
-    margin: 0 84px 42px 84px;
+    margin: 0 0 42px 0;
+    padding: 0 0 0 83px;
   }
 
   @media screen and(min-width: $desktop-width) {
+    margin: 0 0 87px 0;
+    padding: 34px 0 0 45px;
     gap: 64px;
-    margin: 0 0 56px 0;
+  }
+}
+
+.hotel-review__checkbox-item {
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 17px 0 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -349,7 +378,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 62px;
 }
 
 .hotel-review__checkbox-input + .hotel-review__control-mark {
@@ -368,6 +397,12 @@
   }
 }
 
+.hotel-review__textarea-wrapper {
+  @media screen and (min-width: $desktop-width) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
 
 .hotel-review__textarea {
   width: 100%;
@@ -382,10 +417,16 @@
   @media screen and (min-width: $tablet-width) {
     margin: 0 0 48px 0;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    min-height: 160px;
+    margin: 0 0 41px 0;
+  }
 }
 
 .hotel-review__textarea::placeholder {
   padding: 16px;
+  min-height: 160px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -397,20 +438,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0 64px 0;
+    margin: 0 0 64px 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 768px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 64px auto;
   }
 }
 
 .hotel-review__button {
   min-height: 58px;
   padding: 16px 49px;
+  font-size: 21px;
 
   @media screen and (min-width: $tablet-width) {
     max-width: 324px;
+    padding: 17px 71px;
   }
 
   @media screen and (min-width: $desktop-width) {
     max-width: 384px;
+    padding: 17px 101px;
   }
 }
 
@@ -423,8 +474,10 @@
   text-align: right;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+  margin: 0 0 25px 0;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 14px;
+    margin: 0;
   }
 }

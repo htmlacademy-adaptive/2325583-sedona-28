@@ -27,6 +27,7 @@
   width: 28px;
   height: 35px;
   fill: $black;
+  flex-shrink: 0;
 
   &:hover {
     fill: $blue;
