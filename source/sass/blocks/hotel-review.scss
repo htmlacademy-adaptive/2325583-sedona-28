@@ -196,8 +196,7 @@
 
   &:active {
     background-color: $white;
-    outline: none;
-    border: 4px solid rgba(229, 229, 229, 1);
+    outline: 4px solid rgba(229, 229, 229, 1);
   }
 }
 
@@ -292,6 +291,10 @@
   margin: 0;
 }
 
+.hotel-review__radio-input:focus + .hotel-review__control-mark {
+  outline: 2px solid $black;
+}
+
 .hotel-review__control-mark {
   position: absolute;
   width: 46px;
@@ -305,6 +308,10 @@
 
   &:active {
     background-color: #d5d5d5;
+  }
+
+  &:focus {
+    outline: 2px solid $black;
   }
 }
 
@@ -372,6 +379,10 @@
   width: 46px;
   height: 46px;
   margin: 0;
+}
+
+.hotel-review__checkbox-input:focus + .hotel-review__control-mark {
+  outline: 2px solid $black;
 }
 
 .hotel-review__checkbox-name {
@@ -453,6 +464,19 @@
   min-height: 58px;
   padding: 16px 49px;
   font-size: 21px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 
   @media screen and (min-width: $tablet-width) {
     max-width: 324px;
