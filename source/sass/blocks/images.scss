@@ -112,6 +112,14 @@
   }
 }
 
+.images__link {
+  cursor: pointer;
+}
+
+.images__text-wrapper {
+  max-width: 200px;
+}
+
 .images__container {
   position: relative;
 
@@ -152,6 +160,7 @@
 
 .images__count {
   position: relative;
+  max-width: 70px;
 }
 
 .images__title {

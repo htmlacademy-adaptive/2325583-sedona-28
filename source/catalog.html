@@ -19,7 +19,7 @@
   <header class="main-header">
     <a class="main-header__logo">
       <img class="main-header__logo-image" src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны."></a>
-    <nav class="main-nav main-nav--opened">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -74,20 +74,23 @@
     <section class="images">
       <ul class="images__list">
         <li class="images__item">
-          <picture class="images__pictures">
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/catalog-desktop-photo-1.webp 1x, img/catalog-desktop-photo-1@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/catalog-tablet-photo-1.webp 1x, img/catalog-tablet-photo-1@2x.webp 2x">
-            <source type="image/webp"
-              srcset="img/catalog-mobile-photo-1.webp 1x, img/catalog-mobile-photo-1@2x.webp 2x">
-            <source media="(min-width: 1200px)"
-              srcset="img/catalog-desktop-photo-1.jpg 1x, img/catalog-desktop-photo-1@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/catalog-tablet-photo-1.jpg 1x, img/catalog-tablet-photo-1@2x.jpg 2x">
-            <img class="images__photo images__photo images__photo--height-changer" src="img/catalog-mobile-photo-1.jpg"
-              srcset="img/catalog-mobile-photo-1@2x.jpg 2x" width="280" height="280" alt="дорога на закате.">
-          </picture>
+          <a class="images__link" href="#">
+            <picture class="images__pictures">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog-desktop-photo-1.webp 1x, img/catalog-desktop-photo-1@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/catalog-tablet-photo-1.webp 1x, img/catalog-tablet-photo-1@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog-mobile-photo-1.webp 1x, img/catalog-mobile-photo-1@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop-photo-1.jpg 1x, img/catalog-desktop-photo-1@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet-photo-1.jpg 1x, img/catalog-tablet-photo-1@2x.jpg 2x">
+              <img class="images__photo images__photo images__photo--height-changer"
+                src="img/catalog-mobile-photo-1.jpg" srcset="img/catalog-mobile-photo-1@2x.jpg 2x" width="280"
+                height="280" alt="дорога на закате.">
+            </picture>
+          </a>
           <div class="images__container">
             <div class="images__text-wrapper">
               <h3 class="images__title">Неродные просторы</h3>
@@ -98,22 +101,25 @@
               <span class="images__number">1350</span>
             </div>
           </div>
+
         </li>
         <li class="images__item">
-          <picture class="images__pictures">
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/catalog-desktop-photo-2.webp 1x, img/catalog-desktop-photo-2@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/catalog-tablet-photo-2.webp 1x, img/catalog-tablet-photo-2@2x.webp 2x">
-            <source type="image/webp"
-              srcset="img/catalog-mobile-photo-2.webp 1x, img/catalog-mobile-photo-2@2x.webp 2x">
-            <source media="(min-width: 1200px)"
-              srcset="img/catalog-desktop-photo-2.jpg 1x, img/catalog-desktop-photo-2@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/catalog-tablet-photo-2.jpg 1x, img/catalog-tablet-photo-2@2x.jpg 2x">
-            <img class="images__photo" src="img/catalog-mobile-photo-2.jpg"
-              srcset="img/catalog-mobile-photo-2@2x.jpg 2x" width="280" height="280" alt="растительность Седоны.">
-          </picture>
+          <a class="images__link" href="#">
+            <picture class="images__pictures">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog-desktop-photo-2.webp 1x, img/catalog-desktop-photo-2@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/catalog-tablet-photo-2.webp 1x, img/catalog-tablet-photo-2@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog-mobile-photo-2.webp 1x, img/catalog-mobile-photo-2@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop-photo-2.jpg 1x, img/catalog-desktop-photo-2@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet-photo-2.jpg 1x, img/catalog-tablet-photo-2@2x.jpg 2x">
+              <img class="images__photo" src="img/catalog-mobile-photo-2.jpg"
+                srcset="img/catalog-mobile-photo-2@2x.jpg 2x" width="280" height="280" alt="растительность Седоны.">
+            </picture>
+          </a>
           <div class="images__container">
             <div class="images__text-wrapper">
               <h3 class="images__title">Местная растительность</h3>
@@ -124,22 +130,25 @@
               <span class="images__number">143</span>
             </div>
           </div>
+
         </li>
         <li class="images__item">
-          <picture class="images__pictures">
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/catalog-desktop-photo-3.webp 1x, img/catalog-desktop-photo-3@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/catalog-tablet-photo-3.webp 1x, img/catalog-tablet-photo-3@2x.webp 2x">
-            <source type="image/webp"
-              srcset="img/catalog-mobile-photo-3.webp 1x, img/catalog-mobile-photo-3@2x.webp 2x">
-            <source media="(min-width: 1200px)"
-              srcset="img/catalog-desktop-photo-3.jpg 1x, img/catalog-desktop-photo-3@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/catalog-tablet-photo-3.jpg 1x, img/catalog-tablet-photo-3@2x.jpg 2x">
-            <img class="images__photo" src="img/catalog-mobile-photo-3.jpg"
-              srcset="img/catalog-mobile-photo-3@2x.jpg 2x" width="280" height="280" alt="серпантины Седоны.">
-          </picture>
+          <a class="images__link" href="#">
+            <picture class="images__pictures">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog-desktop-photo-3.webp 1x, img/catalog-desktop-photo-3@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/catalog-tablet-photo-3.webp 1x, img/catalog-tablet-photo-3@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog-mobile-photo-3.webp 1x, img/catalog-mobile-photo-3@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop-photo-3.jpg 1x, img/catalog-desktop-photo-3@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet-photo-3.jpg 1x, img/catalog-tablet-photo-3@2x.jpg 2x">
+              <img class="images__photo" src="img/catalog-mobile-photo-3.jpg"
+                srcset="img/catalog-mobile-photo-3@2x.jpg 2x" width="280" height="280" alt="серпантины Седоны.">
+            </picture>
+          </a>
           <div class="images__container images__container--dark-grey">
             <div class="images__text-wrapper">
               <h3 class="images__title">Дорога на север</h3>
@@ -152,21 +161,23 @@
           </div>
         </li>
         <li class="images__item">
-          <picture class="images__pictures">
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/catalog-desktop-photo-4.webp 1x, img/catalog-desktop-photo-4@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/catalog-tablet-photo-4.webp 1x, img/catalog-tablet-photo-4@2x.webp 2x">
-            <source type="image/webp"
-              srcset="img/catalog-mobile-photo-4.webp 1x, img/catalog-mobile-photo-4@2x.webp 2x">
-            <source media="(min-width: 1200px)"
-              srcset="img/catalog-desktop-photo-4.jpg 1x, img/catalog-desktop-photo-4@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/catalog-tablet-photo-4.jpg 1x, img/catalog-tablet-photo-4@2x.jpg 2x">
-            <img class="images__photo" src="img/catalog-mobile-photo-4.jpg"
-              srcset="img/catalog-mobile-photo-4@2x.jpg 2x" width="280" height="280"
-              alt="мост дьявола, расположенный в каньоне.">
-          </picture>
+          <a class="images__link" href="#">
+            <picture class="images__pictures">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog-desktop-photo-4.webp 1x, img/catalog-desktop-photo-4@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/catalog-tablet-photo-4.webp 1x, img/catalog-tablet-photo-4@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog-mobile-photo-4.webp 1x, img/catalog-mobile-photo-4@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop-photo-4.jpg 1x, img/catalog-desktop-photo-4@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet-photo-4.jpg 1x, img/catalog-tablet-photo-4@2x.jpg 2x">
+              <img class="images__photo" src="img/catalog-mobile-photo-4.jpg"
+                srcset="img/catalog-mobile-photo-4@2x.jpg 2x" width="280" height="280"
+                alt="мост дьявола, расположенный в каньоне.">
+            </picture>
+          </a>
           <div class="images__container">
             <div class="images__text-wrapper">
               <h3 class="images__title">Мост дьявола</h3>
@@ -177,6 +188,7 @@
               <span class="images__number">254</span>
             </div>
           </div>
+
         </li>
       </ul>
     </section>
@@ -189,20 +201,23 @@
         </p>
       </div>
       <div class="presentation__wrapper">
-        <picture class="presentations__pictures">
-          <source type="image/webp" media="(min-width: 1200px)"
-            srcset="img/presentation-video-desktop.webp 1x, img/presentation-video-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/presentation-video-tablet.webp 1x, img/presentation-video-tablet@2x.webp 2x">
-          <source type="image/webp"
-            srcset="img/presentation-video-mobile.webp 1x, img/presentation-video-mobile@2x.webp 2x">
-          <source media="(min-width: 1200px)"
-            srcset="img/presentation-video-desktop.jpg 1x, img/presentation-video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/presentation-video-tablet.jpg 1x, img/presentation-video-tablet@2x.jpg 2x">
-          <img class="presentation__image" src="img/presentation-video-mobile.jpg"
-            srcset="img/presentation-video-mobile@2x.jpg 2x" width="280" height="177" alt="презентация видео о Седоне.">
-        </picture>
+        <a class="presentation__link" href="#">
+          <picture class="presentation__pictures">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/presentation-video-desktop.webp 1x, img/presentation-video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/presentation-video-tablet.webp 1x, img/presentation-video-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/presentation-video-mobile.webp 1x, img/presentation-video-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/presentation-video-desktop.jpg 1x, img/presentation-video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/presentation-video-tablet.jpg 1x, img/presentation-video-tablet@2x.jpg 2x">
+            <img class="presentation__image" src="img/presentation-video-mobile.jpg"
+              srcset="img/presentation-video-mobile@2x.jpg 2x" width="280" height="177"
+              alt="презентация видео о Седоне.">
+          </picture>
+        </a>
         <button class="presentation__play">
           <span class="visually-hidden">запустить видео</span>
         </button>
@@ -216,7 +231,7 @@
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Vkontakte.</span>
-          <svg class="social__icon">
+          <svg class="social__icon" width="48" height="48">
             <use xlink:href="img/sprite.svg#vkontakte-logo"></use>
           </svg>
         </a>
@@ -224,7 +239,7 @@
       <li class="social__item">
         <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy">
           <span class="visually-hidden">Telegram.</span>
-          <svg class="social__icon">
+          <svg class="social__icon" width="48" height="48">
             <use xlink:href="img/sprite.svg#telegram-logo"></use>
           </svg>
         </a>
@@ -232,7 +247,7 @@
       <li class="social__item">
         <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">Youtube.</span>
-          <svg class="social__icon">
+          <svg class="social__icon" width="48" height="48">
             <use xlink:href="img/sprite.svg#youtube-logo"></use>
           </svg>
         </a>
@@ -240,7 +255,7 @@
     </ul>
     <a class="copyright" href="https://htmlacademy.ru/" target="_blank">
       <p class="copyright__text">Разработано</p>
-      <svg class="copyright__icon">
+      <svg class="copyright__icon" width="27" height="34">
         <use xlink:href="img/sprite.svg#htmlacademy-icon"></use>
       </svg>
     </a>
